@@ -14,7 +14,6 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: false }));
 app.use('/', router_1.default);
 (0, mongoose_service_1.connectDatabase)();
-app.set('view engine', 'ejs');
 app.listen(PORT, () => {
     console.log(`app is running on PORT ${PORT}`);
 });

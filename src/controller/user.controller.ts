@@ -37,7 +37,7 @@ export const login = async (req: Request, res: Response) => {
 }
 
 export const generateQRCode = async (req: Request, res: Response) => {
-    const data = req.body as {url:string}
+    const data = req.body as { url: string }
     const url = data.url
     QRCode.toString(url, { type: 'terminal' }, function (err, string) {
         if (err) throw err

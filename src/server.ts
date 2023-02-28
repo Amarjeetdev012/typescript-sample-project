@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/', router)
 
 connectDatabase()
-app.set('view engine', 'ejs');
 
 app.listen(PORT, () => {
     console.log(`app is running on PORT ${PORT}`);
